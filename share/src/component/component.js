@@ -19,7 +19,6 @@ class MyComponent extends React.Component {
     }
   }
 
-
   render(){}
 
   renderNative() {
