@@ -1,4 +1,4 @@
-.component {
+.component_not_share {
   background-color: red; }
-  .component__content {
+  .component_not_share__content {
     background-color: green; }

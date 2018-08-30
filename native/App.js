@@ -10,7 +10,7 @@ window.Text= Text;
 export default class App extends React.Component {
   render() {
     return (
-        <View>
+        <View style={{marginTop:50}}>
             Test
         <MyComponent/>
         <MyComponentNotShare/>

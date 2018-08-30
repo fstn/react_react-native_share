@@ -9,6 +9,9 @@
     "share": "file:../share"
   },
   "scripts": {
+    "build-css": "npx node-sass-chokidar src/ -o src/",
+    "remove-css-random": "cp $(ls build/static/css/*.css | awk '{print $1}') build/static/css/main.css",
+    "watch-css": "npx npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

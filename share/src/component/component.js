@@ -23,7 +23,7 @@ class MyComponent extends React.Component {
     return (
       <window.View style={style.component}>
         <window.View style={style.component__content}>
-          <window.Text>Content</window.Text>
+          <window.Text>Shared Content</window.Text>
         </window.View>
       </window.View>
     );
@@ -33,7 +33,7 @@ class MyComponent extends React.Component {
     return (
       <div className='component'>
         <div className='component__content'>
-          Content
+          Shared Content
         </div>
       </div>
     );

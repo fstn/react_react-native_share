@@ -16,7 +16,7 @@ class MyComponentNotShare extends React.Component {
     return (
       <div className='component_not_share'>
         <div className='component_not_share__content'>
-          Content
+          Not shared content
         </div>
       </div>
     );
