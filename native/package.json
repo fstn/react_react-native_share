@@ -1,0 +1,31 @@
+{
+  "name": "native",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-native-scripts": "1.14.0",
+    "jest-expo": "~27.0.0",
+    "react-test-renderer": "16.3.1",
+    "babel-plugin-react-native-classname-to-style": "^1.2.1",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "node-sass": "^4.9.3",
+    "react-native-sass-transformer": "^1.2.3"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^27.0.1",
+    "react": "16.3.1",
+    "react-native": "~0.55.2",
+    "share": "file:../share"
+  }
+}
