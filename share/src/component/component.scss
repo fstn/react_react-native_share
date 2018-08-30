@@ -1,6 +1,7 @@
 .component {
   background-color:red;
     &__content {
+      color:white;
       background-color:green;
     }
 }
