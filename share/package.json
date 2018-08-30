@@ -81,6 +81,7 @@
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.5",
     "redux-logger": "^3.0.6",
-    "tinode-sdk": "^0.15.5-rc2"
+    "tinode-sdk": "^0.15.5-rc2",
+    "react": "16.3.1"
   }
 }

@@ -3,7 +3,6 @@ import React from 'react';
 // $FlowFixMe
 import './component.css';
 import style from './component.scss';
-import {Text, View} from 'react-native';
 
 
 class MyComponent extends React.Component {
@@ -22,11 +21,11 @@ class MyComponent extends React.Component {
 
   renderNative() {
     return (
-      <View style={style.component}>
-        <View style={style.component__content}>
-          <Text>Content</Text>
-        </View>
-      </View>
+      <window.View style={style.component}>
+        <window.View style={style.component__content}>
+          <window.Text>Content</window.Text>
+        </window.View>
+      </window.View>
     );
   }
 
@@ -39,8 +38,6 @@ class MyComponent extends React.Component {
       </div>
     );
   }
-
 }
-
 
 export default MyComponent;
