@@ -1,7 +1,9 @@
-//@flow
+// @flow
 import React from 'react';
+
 // $FlowFixMe
-import './component.css';
+import './component.scss';
+
 import style from './component.scss';
 
 
@@ -9,6 +11,7 @@ class MyComponent extends React.Component {
   // noinspection JSUnusedLocalSymbols
   constructor(props, context) {
     super(props);
+    console.log(style);
     if(window.mode === 'NATIVE'){
       this.render = this.renderNative;
     }else{
@@ -22,18 +25,17 @@ class MyComponent extends React.Component {
   renderNative() {
     return (
       <window.View style={style.component}>
-        <window.View style={style.component__content}>
-          <window.Text>Shared Content</window.Text>
-        </window.View>
+          <window.Text style={style.component__content}>Shared Content for native</window.Text>
       </window.View>
     );
   }
 
+
   renderWeb() {
     return (
-      <div className='component'>
-        <div className='component__content'>
-          Shared Content
+      <div class='component'>
+        <div class='component__content'>
+          Shared Content for web
         </div>
       </div>
     );

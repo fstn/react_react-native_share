@@ -13,6 +13,7 @@ class MyComponentNotShare extends React.Component {
 
 
   render(){
+      console.log(style);
     return (
       <View style={style.component_not_share}>
         <View style={style.component_not_share__content}>
